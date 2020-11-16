@@ -1,0 +1,65 @@
+  .black-box {
+    width:100%;
+    background-color:black;
+    height: 50px;
+  }
+
+  .black-box-top {
+    margin-bottom: 100px;
+  }
+
+  .black-box-bottom {
+    margin-top: 100px;
+  }
+
+  .workshop-top {
+    margin-bottom: 50px;
+  }
+
+  .workshop-bottom {
+    margin-top: 50px;
+  }
+
+  .navbar{
+    font-style: black;
+    font-size: 20px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .card:hover {
+    transition: 0.1s;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .card-title{
+    margin-top: 15px;
+  }
+
+  .card-img-top {
+    height: 350px;
+  }
+
+  #imgModal {
+  align-self: center;
+  width: 350px;
+}
+
+.modal-body {
+  padding: 20px 30px;
+}
+
+.btn-submit {
+  background-color: #BBD196;
+}
+
+.btn-submit:hover {
+  background-color: #BBFF96;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

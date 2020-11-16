@@ -1,0 +1,143 @@
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.utama1 {
+    height: 750px; 
+    display : flex;
+    background-color: #D86969;
+    font-size: 36px;
+}
+.cover{
+    padding-left: 10vh;
+    padding-bottom: 2px;
+    margin-right: 30px;
+    width: 770px;
+    margin-top: 50px;
+}
+.navbar{
+    font-style: black;
+    font-size: 20px;
+    width: 100%;
+    background-color: white;
+}
+.text{
+    margin-top: 150px;
+}
+.grid-container {
+    display: grid;
+    height: 309px!important;
+    background-color: #ffffff;
+    font-size: 40px;
+    text-align: center; 
+    grid-area: auto;
+}
+
+.parent-img-3 {
+  padding: 0;
+}
+
+.img-3 {
+  height: 750px;
+  font-size: 40px;
+  text-align: center;
+}
+.img-3:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.text3:hover {
+  -webkit-filter: brightness(1000%);
+}
+.workshop{
+    font-size: 36px;
+}
+.cariproject{
+    font-size: 36px;
+}
+.buatproject{
+    font-size: 36px;
+}
+.utama3{
+    height: 90vh;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 0fr));
+    margin-top: 0px;
+    grid-gap: 20px;
+    font-size: 20px;
+}
+.box {
+    background-color: #ffffff;
+    width: 215px;
+    height: 150px;
+    border-radius: 10px;
+    background-size: 215px 124px;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+.box:hover {
+  -webkit-filter: brightness(80%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.black-box {
+    width:100%;
+    background-color:black;
+    height: 50px;
+  }
+
+  .black-box-top {
+    margin-bottom: 100px;
+  }
+
+  .black-box-bottom {
+    margin-top: 100px;
+  }
+
+  .workshop-top {
+    margin-bottom: 50px;
+  }
+
+  .workshop-bottom {
+    margin-top: 50px;
+  }
+  footer {
+      background-color: #DDFCA9;
+  }
+
+.card-img-top {
+  height: 350px;
+}
+
+#imgModal {
+  align-self: center;
+  width: 350px;
+}
+
+.btn-submit {
+  background-color: #BBD196;
+}
+
+.btn-submit:hover {
+  background-color: #BBFF96;
+}
+
+.card:hover {
+  transition: 0.1s;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+
+

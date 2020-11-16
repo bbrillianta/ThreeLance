@@ -5,14 +5,17 @@
        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="navbar-style.css">
     </head>
     <body>
       <!-- navbar -->
-      <nav class="navbar navbar-expand navbar-light py-0 fixed sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light py-0 fixed sticky-top">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" width="161" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <a class="navbar-brand" href="index.html"><img src="logo.png" width="161" height="50"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
         <ul id="ulNavbar" class="navbar-nav ml-auto mt-0 mt-lg-0">
             <li class="nav-item active">
             <a class="nav-link mr-4" href="workshop.html">Workshop</a>
@@ -67,20 +70,21 @@
           <div class="parent-img-3 col"><div class="img-3" style="background-image: url('image\ 3edit.jpg');background-size: cover;"><div ><strong><br><br>Buat Project</strong><br><br><p class="buatproject">Dapatkan penghasilan dengan membuat project untuk klienmu.</p></div></div></div>
 
         </div>
-        </div>
+      </div>
         <div class="utama3">
           <h1 style="text-align: center; margin-top: 100px;">Kategori Terpopuler</h1>
           <hr width="500px" color="#BBD196" style="margin-top: 30px;margin-bottom: 30px;border:2px solid #BBD196">
           <div class="container">
-            <div class="row">
-              <a href="list-project.html" class="box col col-lg-3 mx-auto d-flex flex-column justify-content-center" style="background-image: url('image\ 12.png');background-size: cover;"><strong>Website</strong></a> <!-- box zone -->
-              <a href="list-project.html" class="box col col-lg-3 mx-auto d-flex flex-column justify-content-center" style="background-image: url('image\ 9.png');background-size: cover;"><strong>Mobile Apps</strong></a>
-              <a href="list-project.html" class="box col col-lg-3 mx-auto d-flex flex-column justify-content-center" style="background-image: url('Rectangle\ 7.png');background-size: cover;"><strong>Design</strong></a>
-            </div>
-            <div class="row"> 
-              <a href="list-project.html" class="box col-lg-3 mx-auto d-flex flex-column justify-content-center" style="margin-top: 100px;background-image: url('image\ 10.png');background-size: cover;"><strong>Marketing</strong></a>
-              <a href="list-project.html" class="box col-lg-3 mx-auto d-flex flex-column justify-content-center" style="margin-top: 100px;background-image: url('image\ 8.png');background-size: cover;" ><strong>Video & Animasi</strong></a>
-              <a href="kategori.html" class="box col-lg-3 mx-auto d-flex flex-column justify-content-center" style="margin-top: 100px;background-image: url('image\ 11.png');background-size: cover;"><strong>More..</strong></a>
+            <div class="row row-cols-2 row-cols-md-3">
+              <div class="col mt-md-5">
+                <a href="list-project.html" class="box mx-auto d-flex flex-column justify-content-center" style="background-image: url('image\ 12.png');background-size: cover;"><strong>Website</strong></a> 
+              </div> <!-- box zone -->
+              <div class="col mt-md-5">
+              <a href="list-project-mobile.html" class="box mx-auto d-flex flex-column justify-content-center" style="background-image: url('image\ 9.png');background-size: cover;"><strong>Mobile Apps</strong></a></div>
+              <div class="col mt-2 mt-md-5"><a href="list-project-design.html" class="box mx-auto d-flex flex-column justify-content-center" style="background-image: url('Rectangle\ 7.png');background-size: cover;"><strong>Design</strong></a></div>
+              <div class="col mt-2 mt-md-5"><a href="list-project-marketing.html" class="box mx-auto d-flex flex-column justify-content-center" style="background-image: url('image\ 10.png');background-size: cover;"><strong>Marketing</strong></a></div>
+              <div class="col mt-2 mt-md-5"><a href="list-project-vna.html" class="box mx-auto d-flex flex-column justify-content-center" style="background-image: url('image\ 8.png');background-size: cover;" ><strong>Video & Animasi</strong></a></div>
+              <div class="col mt-2 mt-md-5"><a href="kategori.html" class="box mx-auto d-flex flex-column justify-content-center" style="background-image: url('image\ 11.png');background-size: cover;"><strong>More..</strong></a></div>
             </div>
             </div>
           </div>
@@ -224,9 +228,80 @@
             "post": []
           }
         }
+        let mobile = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
+        let design = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
+        let marketing = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
+        let vna = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
+        let bisnis = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
+        let sm = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
+        let translator = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
+        let vo = {
+          "user": {
+            "name": "",
+            "post": []
+          }
+        }
         if(localStorage.getItem("web") == null) {
-          console.log("hii");
           localStorage.setItem("web", JSON.stringify(web));
+        } 
+        if(localStorage.getItem("mobile") == null) {
+          localStorage.setItem("mobile", JSON.stringify(mobile));
+        } 
+        if(localStorage.getItem("design") == null) {
+          localStorage.setItem("design", JSON.stringify(design));
+        }
+        if(localStorage.getItem("marketing") == null) {
+          localStorage.setItem("marketing", JSON.stringify(marketing));
+        }
+        if(localStorage.getItem("vna") == null) {
+          localStorage.setItem("vna", JSON.stringify(vna));
+        }
+        if(localStorage.getItem("sm") == null) {
+          localStorage.setItem("sm", JSON.stringify(sm));
+        }
+        if(localStorage.getItem("translator") == null) {
+          localStorage.setItem("translator", JSON.stringify(translator));
+        }
+        if(localStorage.getItem("vo") == null) {
+          localStorage.setItem("vo", JSON.stringify(vo));
+        }
+        if(localStorage.getItem("bisnis") == null) {
+          localStorage.setItem("bisnis", JSON.stringify(bisnis));
         }
       </script>
     </body>

@@ -1,0 +1,90 @@
+/** NAVBAR **/
+.navbar{
+    font-style: black;
+    font-size: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+/** FORM STYLING **/
+.form-background {
+	width: 50%;
+	padding: 0;
+	margin: auto;
+	border: 6px solid #BBD196;
+	border-radius:10px;
+	position: relative;
+}
+
+.top-left {
+	z-index: -1;
+	position: absolute;
+	margin-right: auto; 
+	width: 17vw;
+	top: 10px;
+}
+
+.bottom-right {
+	z-index: -1;
+	position: absolute;
+	margin-left: auto;
+	width: 20vw;
+	bottom: -5px;
+	right: -3px; 
+}
+
+.forms {
+	margin: 50px 100px;
+}
+
+/** FORM INPUTS STYLING **/
+.form-group {
+	margin-bottom: 30px; 
+}
+
+.form-control {
+	border:1px solid black;
+}
+
+#inputKategoriProject {
+	width: 200px;
+}
+
+.inputKontakProject {
+	margin: 0;
+	padding: 0;
+}
+
+.selectKontakProject {
+	width: 100%;
+}
+
+.btn-submit {
+	background-color: #BBD196;
+}
+
+.btn-submit:hover {
+	background-color: #BBFF96;
+}
+
+label {
+	font-weight: bold;
+}
+
+/** MEDIA QUERIES **/
+/*custom*/
+@media (max-width: 1152px) { 
+	.form-background {
+		width: 70%;
+	}
+}
+
+/* Medium */
+@media (max-width: 768px) { 
+	.form-background {
+		width: 100%;
+	}
+}
+
+
+

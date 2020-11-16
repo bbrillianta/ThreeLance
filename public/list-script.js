@@ -3,12 +3,19 @@ function modal(parent) {
 	const title = parent.getElementsByClassName("card-title")[0];
 	const description = parent.getElementsByClassName("card-text")[0];
 	let tags = parent.getElementsByClassName("tags")[0];
+	const linkKontak = parent.getElementsByClassName("link")[0];
+	const username = parent.getElementsByClassName("user")[0];
 	tags = tags.innerHTML.split(" ");
 	const modalTitle = document.getElementById("projectModalLabel"); 
 	const modalDescription = document.getElementById("projectModalDesc");
 	const tagList = document.getElementById("tagList"); 
+	const userNameModal = document.getElementById("userNameModal");
+	const projectModalContact = document.getElementById("projectModalContact");
+	
 	modalTitle.innerHTML = title.innerHTML;
 	modalDescription.innerHTML = description.innerHTML;
+	userNameModal.innerHTML = username.innerHTML;
+	projectModalContact.setAttribute("href", linkKontak.innerHTML);
 	for(i in tags) {
 		const div = document.createElement("div");
 		div.setAttribute("class", "tag");
@@ -78,7 +85,7 @@ filterBtn.addEventListener("click", () => {
 	const maxHargaFilter = document.getElementById("maxHargaFilter");
 	for(i in filterCheck) {
 		if(filterCheck[i].checked) { 
-			checkedBox.push(filterCheck[i].value); 
+			checkedBox.push(filterCheck[i].value.toLowerCase()); 
 		}
 	}
 	console.log(checkedBox.length + " " + minHargaFilter.value + " " + maxHargaFilter.value);

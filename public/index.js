@@ -34,3 +34,4 @@ $("#indexModal").on("hidden.bs.modal", () => {
     const img = document.getElementById("imgModal");
     img.remove();
 });
+

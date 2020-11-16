@@ -73,31 +73,102 @@ const submitBtn = document.getElementById("submitBtn");
 const user = localStorage.getItem("login");
 
 submitBtn.addEventListener("click", () => {
-	window.location.href = "list-project.html";
-	let post = {
-		"nama": "",
-		"desc": "",
-		"kontak": "",
-		"urlKontak": "",
-		"harga": "",
-		"tags": []
-	};
-	const inputNamaProject = document.getElementById("inputNamaProject");
-	const inputDeskripsiProject = document.getElementById("inputDeskripsiProject");
-	const input_url_kontak = document.getElementById("input_url_kontak");
-	const inputHargaProject = document.getElementById("inputHargaProject");
-	const tag_project = document.getElementsByName("tag_project");
-	const input_url_type = document.getElementById("input_url_type");
-	post.nama = inputNamaProject.value;
-	post.desc = inputDeskripsiProject.value;
-	post.kontak = input_url_type.value;
-	post.urlKontak = input_url_kontak.value;
-	post.harga = inputHargaProject.value;
-	for(i in tag_project) {
-		if(tag_project[i].value != undefined && tag_project[i].value != null && tag_project[i].value != "") {
-			post.tags.push(tag_project[i].value);
+	function submt(web) {
+		console.log(web);
+		let post = {
+			"nama": "",
+			"desc": "",
+			"kontak": "",
+			"urlKontak": "",
+			"harga": "",
+			"tags": []
+		};
+		const inputNamaProject = document.getElementById("inputNamaProject");
+		const inputDeskripsiProject = document.getElementById("inputDeskripsiProject");
+		const input_url_kontak = document.getElementById("input_url_kontak");
+		const inputHargaProject = document.getElementById("inputHargaProject");
+		const tag_project = document.getElementsByName("tag_project");
+		const input_url_type = document.getElementById("input_url_type");
+		post.nama = inputNamaProject.value;
+		post.desc = inputDeskripsiProject.value;
+		post.kontak = input_url_type.value;
+		post.urlKontak = input_url_kontak.value;
+		post.harga = inputHargaProject.value;
+		for(i in tag_project) {
+			if(tag_project[i].value != undefined && tag_project[i].value != null && tag_project[i].value != "") {
+				post.tags.push(tag_project[i].value);
+			}
+		}
+		web.user.name = user;
+		web.user.post.push(post);
+		if(inputKategoriProject == "website") {
+			localStorage.setItem("web", JSON.stringify(web));
+			window.location.href = "list-project.html";
+		} else if(inputKategoriProject == "mobile_apps") {
+			localStorage.setItem("mobile", JSON.stringify(web));
+			window.location.href = "list-project-mobile.html";
+		} else if(inputKategoriProject == "design") {
+			localStorage.setItem("design", JSON.stringify(web));
+			window.location.href = "list-project-design.html";
+		} else if(inputKategoriProject == "marketing") {
+			localStorage.setItem("marketing", JSON.stringify(web));
+			window.location.href = "list-project-marketing.html";
+		} else if(inputKategoriProject == "video_animasi") {
+			localStorage.setItem("vna", JSON.stringify(web));
+			window.location.href = "list-project-vna.html";
+		} else if(inputKategoriProject == "bisnis") {
+			localStorage.setItem("bisnis", JSON.stringify(web));
+			window.location.href = "list-project-bisnis.html";
+		} else if(inputKategoriProject == "social_media") {
+			localStorage.setItem("sm", JSON.stringify(web));
+			window.location.href = "list-project-smedia.html";
+		} else if(inputKategoriProject == "translator") {
+			localStorage.setItem("translator", JSON.stringify(web));
+			window.location.href = "list-project-translator.html";
+		} else if(inputKategoriProject == "voice_over") {
+			localStorage.setItem("vo", JSON.stringify(web));
+			window.location.href = "list-project-vo.html";
 		}
 	}
-	console.log(post);
+	const inputKategoriProject = document.getElementById("inputKategoriProject").value;
+	console.log(inputKategoriProject);
+	if(inputKategoriProject == "website") {
+		const retrievedObject = localStorage.getItem("web");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else if(inputKategoriProject == "mobile_apps") {
+		const retrievedObject = localStorage.getItem("mobile");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else if(inputKategoriProject == "design") {
+		const retrievedObject = localStorage.getItem("design");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else if(inputKategoriProject == "marketing") {
+		const retrievedObject = localStorage.getItem("marketing");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else if(inputKategoriProject == "video_animasi") {
+		const retrievedObject = localStorage.getItem("vna");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else if(inputKategoriProject == "bisnis") {
+		const retrievedObject = localStorage.getItem("bisnis");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else if(inputKategoriProject == "social_media") {
+		const retrievedObject = localStorage.getItem("sm");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else if(inputKategoriProject == "translator") {
+		const retrievedObject = localStorage.getItem("translator");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	} else {
+		const retrievedObject = localStorage.getItem("vo");
+		const web = JSON.parse(retrievedObject);
+		submt(web);
+	}
+	
 });
 

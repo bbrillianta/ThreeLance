@@ -1,4 +1,4 @@
-if(localStorage.getItem("login") == "null") {
+if(localStorage.getItem("login") == null) {
 	window.location.href = "signin.html";
 }
 

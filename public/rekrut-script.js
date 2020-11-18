@@ -1,6 +1,9 @@
+console.log(localStorage.getItem("login"));
 if(localStorage.getItem("login") == null) {
 	window.location.href = "signin.html";
 }
+
+
 
 //getButton dan buat id baru;
 const tambahKontak = document.getElementById("tambahKontakBtn");

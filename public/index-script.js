@@ -1,5 +1,5 @@
 const login = localStorage.getItem("login");
-if(login != "null") {
+if(login != null) {
 	const signinNav = document.getElementById("signinNav");
 	const joinNav = document.getElementById("joinNav");
 	signinNav.remove();
@@ -18,7 +18,7 @@ if(login != "null") {
 
 	const logout = document.getElementById("logout");
 	logout.addEventListener("click", () => {
-		localStorage.setItem("login", null);
+		localStorage.removeItem("login");
 	});
 }
 
